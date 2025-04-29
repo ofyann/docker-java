@@ -28,6 +28,10 @@ RUN apt-get update && \
         tzdata \
         ca-certificates \
         locales \
+        fontconfig \
+        libx11-6 \
+        libxext6 \
+        libxrender1 \
         wget && \
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo "Asia/Shanghai" > /etc/timezone && \
